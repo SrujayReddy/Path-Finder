@@ -1,7 +1,7 @@
 
-# UW Path Finder
+# Path Finder
 
-**UW Path Finder** is a Java-based application for finding shortest walking paths around the UW–Madison campus. It uses a graph-based approach (with **Dijkstra’s Algorithm**) for computing optimal routes, backed by a custom hashtable that stores map data efficiently.
+**Path Finder** is a Java-based application for finding shortest walking paths around the UW–Madison campus. It uses a graph-based approach (with **Dijkstra’s Algorithm**) for computing optimal routes, backed by a custom hashtable that stores map data efficiently.
 
 ---
 
@@ -119,24 +119,35 @@ Compiles and runs all JUnit 5 tests for the frontend.
 ## Project Structure
 
 ```
-.
-├── Backend.java
-├── BackendDeveloperTests.java
-├── BackendInterface.java
-├── BaseGraph.java
-├── DijkstraGraph.java
-├── Frontend.java
-├── FrontendInterface.java
-├── FrontendDeveloperTests.java
-├── GraphADT.java
-├── HashtableMap.java
-├── MapADT.java
-├── PlaceholderMap.java
-├── ShortestPathInterface.java
-├── TextUITester.java
-├── campus.dot
-├── Makefile
-└── ...
+path-finder/
+├── backend/
+│   ├── Backend.java
+│   ├── BackendDeveloperTests.java
+│   ├── BackendInterface.java
+│   ├── BackendPlaceholder.java
+│   ├── ShortestPathImplementation.java
+│   └── ShortestPathInterface.java
+├── frontend/
+│   ├── Frontend.java
+│   ├── FrontendDeveloperTests.java
+│   ├── FrontendInterface.java
+│   └── TextUITester.java
+├── graph/
+│   ├── BaseGraph.java
+│   ├── DijkstraGraph.java
+│   ├── GraphADT.java
+├── datastructures/
+│   ├── HashtableMap.java
+│   ├── MapADT.java
+│   └── PlaceholderMap.java
+├── submission-checkers/
+│   ├── P23SubmissionChecker.java
+│   └── P25SubmissionChecker.java
+├── server/
+│   └── HelloWebServer.java
+├── data/
+│   └── campus.dot
+└── README.md
 
 ```
 
