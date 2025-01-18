@@ -1,5 +1,4 @@
 
-```md
 # UW Path Finder
 
 **UW Path Finder** is a Java-based application for finding shortest walking paths around the UW–Madison campus. It uses a graph-based approach (with **Dijkstra’s Algorithm**) for computing optimal routes, backed by a custom hashtable that stores map data efficiently.
